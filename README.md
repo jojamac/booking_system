@@ -3,7 +3,7 @@
 Design
 =========
 
-* ![image](https://cloud.githubusercontent.com/assets/13240251/9054005/516dc86a-3a42-11e5-9d4c-5950b97679f7.png)
+* ![image](https://cloud.githubusercontent.com/assets/13240251/9074800/1b5d4638-3ad3-11e5-8a05-4078f8ac159e.png)
 
 * ![image](https://cloud.githubusercontent.com/assets/13240251/9054223/794ebb58-3a44-11e5-832b-265f777cee59.png)
 
