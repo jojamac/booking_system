@@ -24,8 +24,10 @@ mongoose.connect(connectionString, function (err, res) {
 });
 
 /* PROTECTED REGION ID(DesclubAPI_mx.com.desclub_DocumentalIndexModel__mid) ENABLED START */
-mongoose.set('debug', false);
+mongoose.set('debug', true);
 /* PROTECTED REGION END */
+
+logger.debug('Rergistrando modelos ..');
 
 require('./Booking').model();
 require('./Products').model();

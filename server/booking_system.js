@@ -21,11 +21,22 @@ var app = express();
 //boostrap mongoDB schemas and models
 require('./app/model/indexDocumental');
 
+//initialize repositories if required
+require('./app/repository/RepositoryFactory').init(app);
+
+
+// express settings
+require('./config/express')(app, config);
+
+// Bootstrap routes
+require('./app/route')(app);
+
 /* PROTECTED REGION ID(DesclubAPI_mx.com.desclub_serverconfig) ENABLED START */
 
 //start app on mentioned port
 app.listen(config.app.port);
 
 logger.info('listening on port ' + config.app.port);
+
 
 /* PROTECTED REGION END */
