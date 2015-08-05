@@ -11,19 +11,23 @@ var config = require('../../config/config')[env];
 
 var userRepository = repositoryFactory.getUserRepository();
 
-module.exports.createUser = function (user) {
+module.exports.createUser = function (req, res) {
 
-    logger.debug('Hola Mundo');
+    var user = {
+        name: 'David',
+        email: 'david@dfgdfg.com',
+        phone: '3454535'
 
+    };
 
-    //var promise = userRepository.createUser(user);
-    //
-    //promise.then(function (userCreated) {
-    //
-    //    logger.debug(userCreated);
-    //
-    //}).then(null, function (error) {
-    //    logger.trace(error);
-    //});
+    var promise = userRepository.createUser(user);
+
+    promise.then(function (userCreated) {
+
+        logger.debug(userCreated);
+
+    }).then(null, function (error) {
+        logger.trace(error);
+    });
     /* PROTECTED REGION END */
 };
