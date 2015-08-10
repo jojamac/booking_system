@@ -1,3 +1,8 @@
+/**
+ * The document module with the mongoose User schema
+ * @module model/Users
+ */
+
 var logger = console;
 
 var mongoose = require('mongoose'),
