@@ -46,7 +46,6 @@ module.exports.getUsers = function(req, res){
     promise.then(function (users) {
         logger.debug(users);
         res.header(config.countHeader, users.count);
-        res.json({message: 'User list'});
     }).then(null, function (error) {
         logger.error(error.toString());
         res.status(500).json(ErrorUtil.unknownError(error));
