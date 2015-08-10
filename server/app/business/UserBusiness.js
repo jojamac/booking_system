@@ -12,7 +12,7 @@ var config = require('../../config/config')[env];
 
 var userRepository = repositoryFactory.getUserRepository();
 
-var ErrorUtil = require('../util/ErrorUtil');
+var ErrorUtil = require('./util/ErrorUtil');
 
 var mongoose = require('mongoose');
 var SchemaType = mongoose.SchemaType;
