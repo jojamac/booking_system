@@ -101,7 +101,7 @@ module.exports.createUser = function (user) {
 /**
  * Updates a user according to the _id
  * @param {string} id the _id of the user to be updated
- * @param {User} corporate the user to be updated
+ * @param {User} The user to be updated
  * @returns {User}
  */
 module.exports.updateUser = function (id, user) {

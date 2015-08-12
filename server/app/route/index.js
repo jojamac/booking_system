@@ -1,4 +1,6 @@
 var userRoute = require("./UserRoute");
+var productRoute = require("./ProductRoute");
+var bookingRoute = require("./BookingRoute");
 
 
 var logger = console;
@@ -14,8 +16,7 @@ var config = require('../../config/config')[env];
  */
 module.exports = function (app, passport) {
 
-
     userRoute(app, passport);
-
-
+    productRoute(app, passport);
+    bookingRoute(app, passport);
 }

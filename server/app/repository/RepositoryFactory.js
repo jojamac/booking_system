@@ -32,6 +32,14 @@
 			 */
 			getUserRepository: function(){
 				return require("./UserRepository");
+			},
+
+			getProductRepository: function(){
+				return require("./ProductRepository");
+			},
+
+			getBookingRepository: function(){
+				return require("./BookingRepository");
 			}
 		};
 		

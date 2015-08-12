@@ -1,6 +1,6 @@
 /**
  * The module representing the user routes module
- * @module route/user
+ * @module route/users
  */
 
 var userBusiness = require('../business/UserBusiness');

@@ -27,7 +27,7 @@ mongoose.connect(connectionString, function (err, res) {
 mongoose.set('debug', true);
 /* PROTECTED REGION END */
 
-logger.debug('Rergistrando modelos ..');
+logger.debug('Registrando modelos ..');
 
 require('./Booking').model();
 require('./Products').model();

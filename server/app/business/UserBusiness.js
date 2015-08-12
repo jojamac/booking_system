@@ -88,8 +88,8 @@ module.exports.createUser = function (req, res) {
 
 /**
  * Updates a user
- * @param {string} id -HTTP Type: NAMED- the _id of the corporate to update
- * @param {User} user -HTTP Type: BODY- the corporate to update
+ * @param {string} id -HTTP Type: NAMED- the _id of the user to update
+ * @param {User} user -HTTP Type: BODY- the user to update
  * @returns {User}
  */
 module.exports.updateUser = function(req, res){
